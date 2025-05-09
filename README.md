@@ -92,7 +92,7 @@ Please familiarize yourself with the current folder structure:
 
 ## 👤 Maintainer Approval
 
-Only the repository owner (currently @**Naman Vasudev**(https://github.com/Naman-Vasudev)can approve and merge Pull Requests into the main branch. This ensures content consistency and quality.
+Only the repository owner (currently @**Naman Vasudev**(https://github.com/Naman-Vasudev) can approve and merge Pull Requests into the main branch. This ensures content consistency and quality.
 
 ---
 
