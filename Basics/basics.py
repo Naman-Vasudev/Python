@@ -59,6 +59,12 @@ print(round(4.9999999)) # Round off to the nearest integer (Result: 5)
 # Rounding to specific decimal places
 print(round(45.654, 1))  # Round to 1 decimal place (Result: 45.7)
 
+#Getting the output at fixed decimal places
+x = int(input("Enter the number of decimal places: "))
+number = float(input("Enter the number: "))
+print(f"{number:.{x}f}")
+
+
 # --------------------------------------------
 # Comparison Operators
 # --------------------------------------------
