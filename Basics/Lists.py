@@ -77,6 +77,19 @@ print(courses)
 sorted_courses = sorted(courses)  # Returns a sorted copy without modifying the original list
 print(sorted_courses)
 
+# copy() Returns copy of the list. This can be done to perform operations on the list without modifying the original list. Example:
+
+colors = ["voilet", "green", "indigo", "blue"]
+newlist = colors.copy()
+print(colors)
+print(newlist)
+
+# count() Returns the count of the number of items with the given value.Example:
+colors = ["voilet", "green", "indigo", "blue", "green"]
+print(colors.count("green"))
+
+num = [4,2,5,3,6,1,2,1,3,2,8,9,7]
+
 # --------------------------------------------
 # List Functions
 # --------------------------------------------

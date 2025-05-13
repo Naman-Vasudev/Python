@@ -57,27 +57,6 @@ print(string[6:])   # From index 6 to end
 print(string[-5:])  # Last 5 characters
 
 # --------------------------------------------
-# String Methods
-# --------------------------------------------
-
-text = "I am a coder."
-
-print(text.endswith("er."))  # Returns True if string ends with given substring
-print(text.capitalize())      # Capitalizes the first character
-print(text.replace("coder", "developer"))  # Replaces all occurrences of a word
-print(text.find("am"))        # Returns the index of the first occurrence
-print(text.count("am"))       # Counts occurrences of a substring
-
-# Changing case
-print(string.upper())  # Convert to uppercase
-print(string.lower())  # Convert to lowercase
-
-# Finding occurrences
-print(string.count("name"))  # Number of times "name" appears
-print(string.count("n"))     # Number of times "n" appears
-print(string.find("Naman"))  # Returns index of "Naman", -1 if not found
-
-# --------------------------------------------
 # String Formatting
 # --------------------------------------------
 

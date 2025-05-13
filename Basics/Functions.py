@@ -47,16 +47,3 @@ def placeholder_function():
 
 # Calling an empty function
 print(placeholder_function())  # Output: None
-
-# --------------------------------------------
-# Function with Default Parameter Value
-# --------------------------------------------
-
-def hello_func(greeting, name='You'):
-    """Returns a formatted greeting message with a default name."""
-    return f"{greeting}, {name}!"
-
-# Function calls
-print(hello_func('Hi', 'Naman'))        # Output: Hi, Naman!
-print(hello_func('Hello'))              # Output: Hello, You!
-print(hello_func('Good morning', name='Aman'))  # Output: Good morning, Aman!
