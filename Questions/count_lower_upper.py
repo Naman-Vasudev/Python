@@ -15,6 +15,18 @@ def count_lower_upper(input_str):
 
     return {"Lower chars:":count_lower,"Upper chars: ":count_upper}
 
-input_str=str(input("Enter a string: "))
-print(count_lower_upper(input_str))
+def count_lower_upper_1(input_str):
+  
+    count_lower=0
+    count_upper=0
+    for i in  input_str:
+            if i.islower()==True:
+                count_lower+=1
+            if i.isupper()==True:
+                count_upper+=1
 
+    return {"Lower chars:":count_lower,"Upper chars: ":count_upper}
+
+input_str=str(input("Enter a string: "))
+print(count_lower_upper_1(input_str))
+print(count_lower_upper(input_str))    

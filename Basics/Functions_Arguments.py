@@ -74,6 +74,22 @@ def name(**name):
 name(mname="Buchanan", lname="Barnes", fname="James")  
 # Output: Hello, James Buchanan Barnes
 
+# 4.3. Combine Positional, *args, and **kwargs
+# Order: normal params -> *args -> default params -> **kwargs
+
+def full_intro(title, *traits, status="Active", **info):
+    print(f"Title: {title}")
+    print("Traits:", traits)
+    print("Status:", status)
+    print("Additional Info:", info)
+
+full_intro("Agent", "Loyal", "Stealthy", location="Wakanda", mission="Top Secret")
+# Output:
+# Title: Agent
+# Traits: ('Loyal', 'Stealthy')
+# Status: Active
+# Additional Info: {'location': 'Wakanda', 'mission': 'Top Secret'}
+
 # ------------------------------------------------------
 # 5. RETURN STATEMENT
 # ------------------------------------------------------
@@ -97,3 +113,28 @@ def hello_func(greeting, name='You'):
 print(hello_func('Hi', 'Naman'))            # Output: Hi, Naman!
 print(hello_func('Hello'))                  # Output: Hello, You!
 print(hello_func('Good morning', name='Aman'))  # Output: Good morning, Aman!
+
+# ------------------------------------------------------
+# BONUS: Mixed Argument Example - Positional, Default, and Keyword
+# ------------------------------------------------------
+
+def demo_args(b, c, d, a=10):
+    print("a:", a, "b:", b, "c:", c, "d:", d)
+
+# Mixing positional and keyword arguments
+# Positional: b=10, c=20 | Keyword: d=30 | a uses default=10
+demo_args(10, 20, d=30)
+# Output: a: 10 b: 10 c: 20 d: 30
+
+# Another call overriding the default
+demo_args(1, 2, 3, 4)
+# Output: a: 4 b: 1 c: 2 d: 3
+
+# ------------------------------------------------------
+# Argument Order Rule Summary
+# ------------------------------------------------------
+# In function definitions:
+# 1. Positional arguments (required)
+# 2. *args (arbitrary positional)
+# 3. Default arguments
+# 4. **kwargs (arbitrary keyword)
