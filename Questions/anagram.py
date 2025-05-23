@@ -1,10 +1,8 @@
 def generate_anagrams(input_str):
     """
     Generate all unique anagrams of a given input string using recursion.
-
     Args:
         input_str (str): The input string.
-
     Returns:
         list[str]: Sorted list of unique anagrams.
     """
@@ -21,9 +19,9 @@ def generate_anagrams(input_str):
     rem_anagrams = generate_anagrams(rem_chars)
 
     # Insert the first character at all positions in each sub-anagram
-    for partial in rem_anagrams:
-        for pos in range(len(partial) + 1):
-            new_anagram = partial[:pos] + first_char + partial[pos:]
+    for partial_anagrams in rem_anagrams:
+        for position in range(len(partial_anagrams) + 1):
+            new_anagram = partial_anagrams[:position] + first_char + partial_anagrams[position:]
             all_anagrams.append(new_anagram)
 
     # Remove duplicates and return sorted list
