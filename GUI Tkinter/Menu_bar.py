@@ -16,7 +16,7 @@ file_menu.add_command(label="Open", command=display)
 file_menu.add_command(label="Save", command=display)
 file_menu.add_separator()
 file_menu.add_command(label="Exit", command=window.quit)
-menu_bar.add_cascade(label="File", menu=file_menu)
+menu_bar.add_cascade(label="File", menu=file_menu) #LIKE PACK/PLACE menu arg specifies which hierachy to follow
 
 # Create Edit menu
 edit_menu = Menu(menu_bar, tearoff=0)

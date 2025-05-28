@@ -11,7 +11,7 @@ checkbox=Checkbutton(window,text="Python",variable=x,onvalue=1,offvalue=0,comman
 checkbox.pack()
 checkbox.config(font=('Arial',20)) #changes the font
 checkbox.config(fg='#00FF00') #foreground color
-checkbox.config(bg='#000000') #background color
+checkbox.config(bg="#430000") #background color
 checkbox.config(activeforeground='#0000FF') #active foreground color
 checkbox.config(activebackground='#000000') #active background color
 window.mainloop()
