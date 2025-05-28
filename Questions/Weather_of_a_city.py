@@ -2,7 +2,7 @@ import requests
 city_name=input("Enter a name of city: ")
 
 def generate_report(c):
-    url="https://wttr.in/{}".format(c)
+    url=f"https://wttr.in/{c}"
     try:
         data=requests.get(url)
         T=data.text
