@@ -74,14 +74,14 @@ del info
 student = {'name': 'John', 'age': 25, 'courses': ['Maths', 'CompSci']}
 
 # Adding a new key-value pair
-student['phone'] = '9779972095'
+student['phone'] = '977997'
 print(student['phone'])  
-# Output: 9779972095
+# Output: 977997
 
 # Updating multiple values
 student.update({'name': 'Naman', 'college': 'PEC'})
 print(student)
-# Output: {'name': 'Naman', 'age': 25, 'courses': ['Maths', 'CompSci'], 'phone': '9779972095', 'college': 'PEC'}
+# Output: {'name': 'Naman', 'age': 25, 'courses': ['Maths', 'CompSci'], 'phone': '97799', 'college': 'PEC'}
 
 
 # ------------------------------------------------

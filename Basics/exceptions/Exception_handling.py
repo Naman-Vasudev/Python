@@ -11,6 +11,18 @@
 # ----------------------------------------------------
 # 🔸 Basic try-except Block
 # ----------------------------------------------------
+
+try:
+    # Attempt to get input and convert to int
+    x = int(input("What's x? "))
+except ValueError:
+    # If input is not an integer, print error message
+    print("x is not an integer")
+
+# This will cause a NameError if x wasn't successfully defined above
+# So we comment it out to avoid crashing
+# print(f"x is {x}")
+
 try:
     num = int(input("Enter an integer: "))
 except ValueError:
